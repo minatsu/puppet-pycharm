@@ -1,11 +1,12 @@
 # PyCharm
 
-[![Build Status](https://travis-ci.org/boxen/puppet-pycharm.png?branch=master)](https://travis-ci.org/boxen/puppet-pycharm)
-
 ## Usage
 
 ```puppet
-include pycharm
+class { 'pycharm':
+    edition => 'community',
+    version => '3.0.1'
+}
 ```
 
 ## Required Puppet Modules
